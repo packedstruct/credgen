@@ -45,7 +45,7 @@ clear:
 recreate: gen clean
 
 gen: $(DATDIR)/*
-	cd $(DATDIR) ; ./gen
+	cd $(DATDIR) ; chmod 0744 ./gen ; ./gen
 
 $(EXEC): $(SRCDIR)/*.c $(SRCDIR)/*.h
 	mkdir -p $(BINDIR)
