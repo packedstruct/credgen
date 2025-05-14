@@ -76,7 +76,7 @@ int acquire(int at, int len, char **dst)
     return 0;
 }
 
-// Return string for (*position)-th word
+// Return string for (*position)-th word in NUL-separated words data
 // If (*position) is larger than total word count, then set it to total count
 const char* nthword(uint32_t *position)
 {
